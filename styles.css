@@ -1,0 +1,71 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-size: 16px;
+   background-color: #222;
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   height: 100vh;
+   display: grid;
+   place-items: center;
+   grid-template-rows: 50px 200px auto;
+}
+#container {
+   border: 1px solid #fff;
+   height: 75%;
+   width: 75%; 
+   grid-row: 3/4;
+   display: grid;
+   grid-template-columns: repeat(3, calc(100%/3));
+   grid-template-rows: repeat(3, calc(100%/3));
+}
+#rock,
+#paper,
+#scissors {
+   border: 1px solid #fff;
+   height: 100%;
+   width: 100%;
+   text-align: center;
+   font-size: 7rem;
+}
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+   background-color: black;
+   cursor: pointer;
+}
+#winner {
+   border: 1px solid #fff;
+   grid-row: 2/3;
+   grid-column: 2/3;
+   font-size: 3rem;
+   text-align: center;
+   padding-top: 40px;
+}
+#cpu {
+   border: 1px solid #fff;
+   grid-row: 2/3;
+   grid-column: 3/4;
+   font-size: 7rem;
+   text-align: center;
+}
+#rock {
+   grid-row: 1/2;
+}
+#paper{
+   grid-row: 2/3;
+}
+#scissors{
+   grid-row: 3/4;
+}
+#score{
+   border: 1px solid #fff;
+   height:100px;
+   width:300px;
+   grid-row: 2/3;
+   text-align: center;
+   font-size: 3rem;
+}
