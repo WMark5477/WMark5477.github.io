@@ -13,7 +13,7 @@ score.textContent += ` ${playerScore}:${cpuScore}`
 
 function check(){
    if(choice == cpuChoice){
-      winner.textContent = "Remis!"
+      winner.textContent = "Tie!"
    }
    switch(choice){
       case 0: switch(cpuChoice){
