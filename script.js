@@ -13,20 +13,20 @@ score.textContent += ` ${playerScore}:${cpuScore}`
 
 function check(){
    if(choice == cpuChoice){
-      winner.textContent = "Remis!"
+      winner.textContent = "Tie!"
    }
    switch(choice){
       case 0: switch(cpuChoice){
-         case 1: winner.textContent = "Przegrałeś!"; cpuScore++; break;
-         case 2: winner.textContent = "Wygrałeś!"; playerScore++; break;
+         case 1: winner.textContent = "You lose!"; cpuScore++; break;
+         case 2: winner.textContent = "You win!"; playerScore++; break;
       }; break;
       case 1: switch(cpuChoice){
-         case 2: winner.textContent = "Przegrałeś!"; cpuScore++; break;
-         case 0: winner.textContent = "Wygrałeś!"; playerScore++; break;
+         case 2: winner.textContent = "You lose!"; cpuScore++; break;
+         case 0: winner.textContent = "You win!"; playerScore++; break;
       }; break;
       case 2: switch(cpuChoice){
-         case 0: winner.textContent = "Przegrałeś!"; cpuScore++; break;
-         case 1: winner.textContent = "Wygrałeś!"; playerScore++; break;
+         case 0: winner.textContent = "You lose!"; cpuScore++; break;
+         case 1: winner.textContent = "You win!"; playerScore++; break;
       }; break;
    }
 }
