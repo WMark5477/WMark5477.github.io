@@ -4,6 +4,7 @@ let scissors = document.getElementById('scissors')
 let winner = document.getElementById('winner')
 let cpu = document.getElementById('cpu')
 let score = document.getElementById('score')
+let cpuImage = document.getElementById('cpuImage')
 let playerScore = 0
 let cpuScore = 0
 let choice
@@ -33,11 +34,11 @@ function check(){
 
 function displayCpuChoice(){
    switch(cpuChoice){
-      case 0: cpu.textContent = "🧱";
+      case 0: cpuImage.src = "rock.png";
       break; 
-      case 1: cpu.textContent = "🧻";
+      case 1: cpuImage.src = "paper.png";
       break;
-      case 2: cpu.textContent = "✂";
+      case 2: cpuImage.src = "scissors.png";
       break;
    }
 }
